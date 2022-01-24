@@ -38,6 +38,9 @@
         .cupon-price{
           font-size: 0.9rem;
         }
+        .reg-heading{
+          font-size: 0.8rem;
+        }
         .col-gap-1{
           column-gap: 0.2rem;
         }
@@ -60,6 +63,9 @@
         }
         .cupon-price{
           font-size: 0.9rem;
+        }
+        .reg-heading{
+          font-size: 0.80rem;
         }
         .carousel .carousel-item {
           height: 180px;
@@ -121,7 +127,7 @@
             </div>       
           </div>
 
-          <div class="col-md-8 pe-1 ps-md-0 ps-1">
+          <div class="col-md-9 pe-1 ps-md-0 ps-1">
             <!-- banner carousel section  -->
             <div class="col-12 d-md-block d-none order-lg-0 order-1">
               <div class="h-auto px-0">
@@ -171,7 +177,7 @@
             </div>
             <!-- welcome section and Trending products slides  -->
             <div class="col-12 pt-md-2">
-              <div class="row align-items-center g-0 rounded py-3 pb-2 p-2" style="background: linear-gradient(#fa4e71, #8b0822);">
+              <div class="row align-items-center g-0 rounded py-2 pb-2 p-2" style="background: linear-gradient(#fa4e71, #8b0822);">
                 <div class="col-md-4 col-12">
                   <div class="text-white px-1">
                     <div class="px-1">
@@ -227,14 +233,14 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 row g-0">
+          <div class="col-md-3 row g-0">
             <div class="col-12 order-lg-1 order-0 ps-lg-2 ps-1 pe-md-0 pe-1 pt-md-0 pt-2">
-              <div class="bg-white rounded-2">
+              <div class="rounded-2 h-100 d-flex flex-column justify-content-between" style="background: linear-gradient(rgb(95, 196, 92), rgb(87, 218, 87));">
                 <!-- register section for lg and md device  -->
                 <div class="d-md-block d-none">
                 <div class="d-md-block d-flex justify-content-between px-lg-0 px-2 py-md-2 py-xl-4 py-1 w-100">
                   <div class="text-md-center d-md-block d-none pt-xl-3 pt-lg-2 pt-3"><i class="fas d-block mx-auto fa-user-circle text-dark fs-1"></i> 
-                  <p class="text-dark fw-bold px-2 pt-xl-0 pt-lg-1 ">Welcome to Baob-Arts</p>
+                  <p class="text-dark fw-bold px-2 pt-xl-0 pt-lg-1 reg-heading ">Welcome to Baob-Arts</p>
                   </div>
                   <div class="d-md-flex d-block justify-content-around pt-xxl-3">
                     <button class="btn btn-warning px-2 py-lg-1 py-0">Join</button>               
@@ -243,62 +249,50 @@
                 </div>
                 </div>
                 <!-- super deal section  -->
-              <div class="col-12 rounded-2 pb-2 px-1 pe-2 pt-2 order-last">
+              <div class="col-12 rounded-2 pb-2 px-md-1 px-2 pt-2 order-last">
                 <div class="rounded-2 bg-white p-lg-2 p-1">
                   <div class="d-flex my-0 justify-content-between">
-                    <h5 class="text-success">Super Deal</h5>
-                    <a href="#" class="text-decoration-none text-dark">View more</a>
+                    <h6 class="pt-xl-1 text-success cupon-price">Super Deal</h6>
+                    <a href="#" class="text-decoration-none text-dark cupon-small">View more</a>
                   </div>
-                  <small>Top Products, Increadible Price</small>
+                  <small>Top Products<span class="d-xl-inline d-md-none">, Increadible Price</span></small>
                   <div class="pt-xl-3 pt-2">
                     <div class="responsive-deal mt-1">
-                      <a href="#" class="px-1 text-dark text-decoration-none">
-                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid" alt="">
+                      <a href="#" class="px-1 text-dark text-decoration-none position-relative">
+                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid" style="z-index: 1;" alt="">
                         <small class="">Cute kittin</small>
-                        <div class="d-flex justify-content-start col-gap-1" >
-                          <small class="fw-bold text-center mb-0">$</i>65.06</small>
-                          <small class="bg-danger text-white mb-0 rounded-pill px-lg-2 px-1">-62%</small>
-                        </div>
+                        <small class="bg-danger text-white mb-0 position-absolute top-0 end-0 rounded mx-1">-62%</small>
+                        <small class="fw-bold text-center my-0">$</i>65.06</small>
                       </a>
-                      <a href="#" class="px-1 text-dark text-decoration-none">
-                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid" alt="">
+                      <a href="#" class="px-1 text-dark text-decoration-none position-relative">
+                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid" style="z-index: 1;" alt="">
                         <small class="">Cute kittin</small>
-                        <div class="d-flex justify-content-start col-gap-1">
-                          <small class="fw-bold text-center mb-0">$</i>65.06</small>
-                          <small class="bg-danger text-white mb-0 rounded-pill px-lg-2 px-1">-62%</small>
-                        </div>
+                        <small class="bg-danger text-white mb-0 position-absolute top-0 end-0 rounded mx-1">-62%</small>
+                        <small class="fw-bold text-center my-0">$</i>65.06</small>
                       </a>
-                      <a href="#" class="px-1 text-dark text-decoration-none">
-                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid" alt="">
+                      <a href="#" class="px-1 text-dark text-decoration-none position-relative">
+                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid" style="z-index: 1;" alt="">
                         <small class="">Cute kittin</small>
-                        <div class="d-flex justify-content-start col-gap-1">
-                          <small class="fw-bold text-center mb-0">$</i>65.06</small>
-                          <small class="bg-danger text-white mb-0 rounded-pill px-lg-2 px-1">-62%</small>
-                        </div>
+                        <small class="bg-danger text-white mb-0 position-absolute top-0 end-0 rounded mx-1">-62%</small>
+                        <small class="fw-bold text-center my-0">$</i>65.06</small>
                       </a>
-                      <a href="#" class="px-1 text-dark text-decoration-none">
-                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid" alt="">
+                      <a href="#" class="px-1 text-dark text-decoration-none position-relative">
+                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid" style="z-index: 1;" alt="">
                         <small class="">Cute kittin</small>
-                        <div class="d-flex justify-content-start col-gap-1">
-                          <small class="fw-bold text-center mb-0">$</i>65.06</small>
-                          <small class="bg-danger text-white mb-0 rounded-pill px-lg-2 px-1">-62%</small>
-                        </div>
+                        <small class="bg-danger text-white mb-0 position-absolute top-0 end-0 rounded mx-1">-62%</small>
+                        <small class="fw-bold text-center my-0">$</i>65.06</small>
                       </a>
-                      <a href="#" class="px-1 text-dark text-decoration-none">
-                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid" alt="">
+                      <a href="#" class="px-1 text-dark text-decoration-none position-relative">
+                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid" style="z-index: 1;" alt="">
                         <small class="">Cute kittin</small>
-                        <div class="d-flex justify-content-start col-gap-1">
-                          <small class="fw-bold text-center mb-0">$</i>65.06</small>
-                          <small class="bg-danger text-white mb-0 rounded-pill px-lg-2 px-1">-62%</small>
-                        </div>
+                        <small class="bg-danger text-white mb-0 position-absolute top-0 end-0 rounded mx-1">-62%</small>
+                        <small class="fw-bold text-center my-0">$</i>65.06</small>
                       </a>
-                      <a href="#" class="px-1 text-dark text-decoration-none">
-                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid"alt="">
+                      <a href="#" class="px-1 text-dark text-decoration-none position-relative">
+                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid" style="z-index: 1;" alt="">
                         <small class="">Cute kittin</small>
-                        <div class="d-flex justify-content-start col-gap-1">
-                          <small class="fw-bold text-center mb-0">$</i>65.06</small>
-                          <small class="bg-danger text-white mb-0 rounded-pill px-lg-2 px-1">-62%</small>
-                        </div>
+                        <small class="bg-danger text-white mb-0 position-absolute top-0 end-0 rounded mx-1">-62%</small>
+                        <small class="fw-bold text-center my-0">$</i>65.06</small>
                       </a>
                     </div>
                   </div>
