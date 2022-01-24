@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baob-Arts</title>
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- slick css  -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+    <style>
+      .col-gap-1{
+        column-gap: 1rem;
+      }
+      @media (min-width:1200){
+        .carousel .carousel-item {
+          height: 195px;
+        }
+        .carousel-item img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          min-height: 195px;
+        }
+      }
+      @media (min-width:992px) and (max-width:1199px){
+        .h6{
+          font-size: 0.83rem;
+        }
+        .cupon-small{
+          font-size: 0.75rem;
+        }
+        .cupon-price{
+          font-size: 0.9rem;
+        }
+        .col-gap-1{
+          column-gap: 0.2rem;
+        }
+        .carousel .carousel-item {
+          height: 190px;
+        }
+        .carousel-item img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          min-height: 190px;
+        }
+      }
+      @media (min-width:768px) and (max-width:991px){
+        .h6{
+          font-size: 0.85rem;
+        }
+        .cupon-small{
+          font-size: 0.75rem;
+        }
+        .cupon-price{
+          font-size: 0.9rem;
+        }
+        .carousel .carousel-item {
+          height: 180px;
+        }
+        .carousel-item img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          min-height: 180px;
+        }
+      }
+      @media (max-width: 460px){
+        .arrow-visiblity{
+          display: none;
+        }
+      }
+    </style>
+
+    <!-- fontawesome link  -->
+    <script src="https://kit.fontawesome.com/8a1ead0975.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+      <div class="row gutters-10 position-relative">
+
+      <div class="col-lg-3 position-static d-none d-lg-block" ></div>
+    
+      <div class="col-lg-9 rounded-2 px-lg-2 px-1 shadow-lg rounded-2 py-2 shadow-lg" style="background-color: #F2F2F2;">
+
+        <!-- header section  -->
+        <div class="row pb-2">
+          <div class="d-flex justify-content-between rounded-3 bg-white px-3 py-md-2 py-1 w-100">
+            <div class="d-flex align align-items-center w-100 gap-2">
+              <i class="far d-block fa-check-circle fs-3"></i> <span class="d-block">Secure Payment</span>
+            </div>
+            <div class="d-flex align align-items-center w-100 gap-2 justify-content-md-center">
+              <i class="far d-block fa-check-circle fs-3"></i> <span class="d-block">Secure Payment</span>
+            </div>
+            <div class="d-flex align align-items-center w-100 gap-2 justify-content-md-end">
+              <i class="far d-block fa-check-circle fs-3"></i> <span class="d-block">Secure Payment</span>
+            </div>
+            
+          </div>
+        </div>
+        <div class="row g-0">
+          <!-- register section for mobile devices -->
+          <div class="col-lg-4 col-12 order-lg-1 d-md-none px-0 pb-2 order-0 ps-lg-0 ps-md-4">
+            <div class="bg-white rounded-2 d-lg-block d-flex justify-content-between px-lg-0 px-2 py-xl-3 py-xxl-4 py-1 w-100">
+              <div class="text-md-center d-lg-block d-none pt-lg-4 pt-3"><i class="fas d-block mx-auto fa-user-circle text-dark fs-1"></i> 
+              <p class="text-dark fw-bold ">Welcome to Baob-Arts</p>
+              </div>
+              <p class="text-dark d-lg-none d-block fw-bold mb-0">Welcome to Baob-Arts</p>
+              <div class="d-lg-flex d-block justify-content-around pt-md-2 pt-xxl-3">
+                <button class="btn btn-warning px-3 py-lg-1 py-0">Join</button>               
+                <button class="btn btn-light px-3 py-lg-1 py-0">Sign In</button>                                               
+              </div>
+            </div>       
+          </div>
+
+          <div class="col-md-8 pe-1 ps-md-0 ps-1">
+            <!-- banner carousel section  -->
+            <div class="col-12 d-md-block d-none order-lg-0 order-1">
+              <div class="h-auto px-0">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner rounded-3">
+                    <div class="carousel-item active position-relative">
+                      <img src="images/banner/download.jfif" class="d-block w-100 img-fluid" alt="...">
+                      <div class="position-absolute top-0 disabled start-0 text-white p-3" style="z-index: 10;">
+                        <p>Super Discount</p>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                        <small class="d-block w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit!</small>
+                      </div>
+                    </div>
+                    <div class="carousel-item position-relative">
+                      <img src="images/banner/depositphotos_232314408-stock-illustration-shopping-sprees-video-concept-banner.jpg" class="d-block w-100 img-fluid" alt="...">
+                      <div class="position-absolute top-0 start-0 text-white p-3" style="z-index: 10;">
+                        <p>Super Discount</p>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                        <small class="d-block w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit!</small>
+                      </div>
+                    </div>
+                    <div class="carousel-item position-relative">
+                      <img src="images/banner/images.jfif" class="d-block w-100 img-fluid" alt="...">
+                      <div class="position-absolute top-0 start-0 text-white p-3" style="z-index: 10;">
+                        <p>Super Discount</p>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                        <small class="d-block w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit!</small>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <button class="carousel-control-prev" type="button" style="z-index: 15;" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" style="z-index: 15;" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- welcome section and Categories slides  -->
+            <div class="col-12 pt-md-2">
+              <div class="row align-items-center g-0 rounded py-3 pb-2 p-2" style="background: linear-gradient(#fa4e71, #8b0822);">
+                <div class="col-4">
+                  <div class="text-white px-1">
+                    <div class="px-1">
+                      <h6 class="h6">Welcome newcomers!</h6>
+                      <small class="d-block cupon-small">US $0.01 hot picks & coupons</small>
+                    </div>
+                    <div class="text-white position-relative w-100 py-1 mt-2 px-lg-2 px-1 rounded-3" style="background-color: #FF5A47;">
+                        <p class="fw-bold mb-1 cupon-price">USD 176.678</p>
+                        <p class="mb-1 cupon-small">Get cuopon</p>
+                        <button class="btn text-light end-0 top-0 pt-3 fs-4 position-absolute arrow-visiblity"><i class="fas fa-chevron-circle-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <!-- <p class="mb">Trending Products</p> -->
+                  <div class="">
+                    <div class="row g-0 responsive bg-white p-2 px-lg-2 px-1 rounded-2 pt-3">
+                      <div class="col px-1">
+                        <a href="#" class="card h-100 border-0 text-decoration-none text-dark">
+                          <img src="images/fostering-kittens.jpg" class="card-img-top" alt="...">
+                            <div class="d-flex justify-content-between px-1 py-1">
+                              <small class="text-start">Jacket</small> <small class="bg-primary rounded-pill px-2 text-white">$72.2</small>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="col px-1">
+                        <a href="#" class="card h-100 border-0 text-decoration-none text-dark">
+                          <img src="images/fostering-kittens.jpg" class="card-img-top" alt="...">
+                            <div class="d-flex justify-content-between px-1 py-1">
+                              <small class="text-start">Jacket</small> <small class="bg-primary rounded-pill px-2 text-white">$72.2</small>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="col px-1">
+                        <a href="#" class="card h-100 border-0 text-decoration-none text-dark">
+                          <img src="images/fostering-kittens.jpg" class="card-img-top" alt="...">
+                            <div class="d-flex justify-content-between px-1 py-1">
+                              <small class="text-start">Jacket</small> <small class="bg-primary rounded-pill px-2 text-white">$72.2</small>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="col px-1">
+                        <a href="#" class="card h-100 border-0 text-decoration-none text-dark">
+                          <img src="images/fostering-kittens.jpg" class="card-img-top" alt="...">
+                            <div class="d-flex justify-content-between px-1 py-1">
+                              <small class="text-start">Jacket</small> <small class="bg-primary rounded-pill px-2 text-white">$72.2</small>
+                            </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 row g-0">
+            <div class="col-12 order-lg-1 order-0 ps-lg-2 ps-1 pe-md-0 pe-1 pt-md-0 pt-2">
+              <div class="bg-white rounded-2">
+                <!-- register section for lg and md device  -->
+                <div class="d-md-block d-none">
+                <div class="d-md-block d-flex justify-content-between px-lg-0 px-2 py-md-2 py-xl-4 py-1 w-100">
+                  <div class="text-md-center d-md-block d-none pt-xl-3 pt-lg-2 pt-3"><i class="fas d-block mx-auto fa-user-circle text-dark fs-1"></i> 
+                  <p class="text-dark fw-bold px-2 pt-xl-0 pt-lg-1 ">Welcome to Baob-Arts</p>
+                  </div>
+                  <div class="d-md-flex d-block justify-content-around pt-xxl-3">
+                    <button class="btn btn-warning px-2 py-lg-1 py-0">Join</button>               
+                    <button class="btn btn-light px-2 py-lg-1 py-0">Sign In</button>                                               
+                  </div>
+                </div>
+                </div>
+                <!-- super deal section  -->
+              <div class="col-12 rounded-2 pb-2 px-1 pe-2 pt-2 order-last">
+                <div class="rounded-2 bg-white p-lg-2 p-1">
+                  <div class="d-flex my-0 justify-content-between">
+                    <h5 class="text-success">Super Deal</h5>
+                    <a href="#" class="text-decoration-none text-dark">View more</a>
+                  </div>
+                  <small>Top Products, Increadible Price</small>
+                  <div class="pt-xl-3 pt-2">
+                    <div class="responsive-deal mt-1">
+                      <a href="#" class="px-1 text-dark text-decoration-none">
+                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid" alt="">
+                        <small class="">Cute kittin</small>
+                        <div class="d-flex justify-content-start col-gap-1" >
+                          <small class="fw-bold text-center mb-0">$</i>65.06</small>
+                          <small class="bg-danger text-white mb-0 rounded-pill px-lg-2 px-1">-62%</small>
+                        </div>
+                      </a>
+                      <a href="#" class="px-1 text-dark text-decoration-none">
+                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid" alt="">
+                        <small class="">Cute kittin</small>
+                        <div class="d-flex justify-content-start col-gap-1">
+                          <small class="fw-bold text-center mb-0">$</i>65.06</small>
+                          <small class="bg-danger text-white mb-0 rounded-pill px-lg-2 px-1">-62%</small>
+                        </div>
+                      </a>
+                      <a href="#" class="px-1 text-dark text-decoration-none">
+                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid" alt="">
+                        <small class="">Cute kittin</small>
+                        <div class="d-flex justify-content-start col-gap-1">
+                          <small class="fw-bold text-center mb-0">$</i>65.06</small>
+                          <small class="bg-danger text-white mb-0 rounded-pill px-lg-2 px-1">-62%</small>
+                        </div>
+                      </a>
+                      <a href="#" class="px-1 text-dark text-decoration-none">
+                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid" alt="">
+                        <small class="">Cute kittin</small>
+                        <div class="d-flex justify-content-start col-gap-1">
+                          <small class="fw-bold text-center mb-0">$</i>65.06</small>
+                          <small class="bg-danger text-white mb-0 rounded-pill px-lg-2 px-1">-62%</small>
+                        </div>
+                      </a>
+                      <a href="#" class="px-1 text-dark text-decoration-none">
+                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid" alt="">
+                        <small class="">Cute kittin</small>
+                        <div class="d-flex justify-content-start col-gap-1">
+                          <small class="fw-bold text-center mb-0">$</i>65.06</small>
+                          <small class="bg-danger text-white mb-0 rounded-pill px-lg-2 px-1">-62%</small>
+                        </div>
+                      </a>
+                      <a href="#" class="px-1 text-dark text-decoration-none">
+                        <img src="images/fostering-kittens.jpg" class="rounded img-fluid"alt="">
+                        <small class="">Cute kittin</small>
+                        <div class="d-flex justify-content-start col-gap-1">
+                          <small class="fw-bold text-center mb-0">$</i>65.06</small>
+                          <small class="bg-danger text-white mb-0 rounded-pill px-lg-2 px-1">-62%</small>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>       
+            </div>
+          </div>      
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- slick js  -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
